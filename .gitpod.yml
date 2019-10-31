@@ -1,1 +1,1 @@
-image: docker:19.03.4
+image: docker:19.03.4-dind
