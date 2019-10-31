@@ -1,1 +1,1 @@
-image: docker:19.03.4-dind
+image: docker:19.03.4-dind-rootless
