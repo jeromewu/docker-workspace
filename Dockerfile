@@ -1,5 +1,5 @@
 FROM gitpod/workspace-full
-RUN apt-get update && apt-get install -y kmod
+RUN sudo apt-get update && sudo apt-get install -y kmod
 
 USER gitpod
 
