@@ -1,10 +1,10 @@
-FROM docker:19.03.4-dind-rootless
+FROM gitpod/workspace-full
 
 USER gitpod
 
 # Rootless Docker
 # gets installed to /home/gitpod/bin
-# RUN curl -sSL https://get.docker.com/rootless | sh
+RUN curl -sSL https://get.docker.com/rootless | sh
 # It requires the following env vars:
 RUN ls -lh /tmp
 ENV XDG_RUNTIME_DIR=/tmp/docker-rootless
