@@ -1,5 +1,5 @@
 FROM gitpod/workspace-full
-RUN apt-get update && apt-get install -y kmod uidmap iptables
+RUN sudo apt-get update && sudo apt-get install -y kmod uidmap iptables
 USER gitpod
 ENV XDG_RUNTIME_DIR=/tmp/docker-33333
 ENV PATH=/home/gitpod/bin:$PATH
