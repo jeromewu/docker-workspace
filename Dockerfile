@@ -5,4 +5,4 @@ WORKDIR /home/gitpod
 RUN wget https://github.com/jeromewu/vimrc/archive/v0.1.zip \
 && unzip v0.1.zip \
 && cd vimrc-0.1 \
-&& sh install.sh
+&& bash install.sh
