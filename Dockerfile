@@ -1,7 +1,8 @@
 FROM gitpod/workspace-full
-RUN sudo apt-get update && sudo apt-get install -y kmod uidmap iptables
+RUN sudo apt-get update && sudo apt-get install -y ctags
 USER gitpod
-ENV XDG_RUNTIME_DIR=/tmp/docker-33333
-ENV PATH=/home/gitpod/bin:$PATH
-ENV DOCKER_HOST=unix:///tmp/docker-33333/docker.sock
-RUN curl -sSL https://get.docker.com/rootless | sh
+WORKDIR /home/gitpod
+RUN wget https://github.com/jeromewu/vimrc/archive/v0.1.zip \
+&& unzip v0.1.zip \
+&& cd vimrc-0.1 \
+&& sh install.sh
