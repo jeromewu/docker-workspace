@@ -4,5 +4,5 @@ USER gitpod
 WORKDIR /home/gitpod
 RUN wget https://github.com/jeromewu/vimrc/archive/v0.2.zip
 RUN unzip v0.2.zip
-RUN cd vimrc-0.2
+WORKDIR /home/gitpod/vimrc-0.2
 RUN yes "" | bash install.sh
