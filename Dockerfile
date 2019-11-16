@@ -1,1 +1,1 @@
-FROM docker:dind-rootless
+FROM ubuntu:bionic
